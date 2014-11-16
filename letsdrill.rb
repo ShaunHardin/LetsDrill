@@ -1,15 +1,25 @@
-def get_letter_grade(integer)
- 
-  #Put your code here!
+A_LOWER_BOUND = 90
+B_LOWER_BOUND = 80
+C_LOWER_BOUND = 70
+D_LOWER_BOUND = 60
 
+def get_letter_grade(integer)
+  if integer >= A_LOWER_BOUND
+    return 'A'
+  elsif integer >= B_LOWER_BOUND
+    return 'B'
+  elsif integer >= C_LOWER_BOUND
+    return 'C'
+  elsif integer >= D_LOWER_BOUND
+    return 'D'
+  else
+    return 'F'
+  end
 end
 
 def shortest_string(array)
-
-  #Put your code here!
-
+  array.min_by(&:length)
 end
- 
 
 
 ### Don't touch anything below this line ###
